@@ -1,0 +1,138 @@
+:root {
+    --site-main-color: #252A6E;
+    --site-second-color: #DEDEE5;
+    --active-text: #A98F43;
+
+}
+
+* {
+    direction: rtl;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    font-family: "Cairo Play", sans-serif;
+} */
+.top-nav {
+    padding: 9px 8px 0 10px;
+}
+
+.top-nav img {
+    width: 80px;
+
+}
+
+.top-nav p,
+.top-nav h1 {
+    text-align: right;
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--site-main-color);
+}
+.active {
+    color: var(--active-text);
+}
+.top-nav p {
+    font-size: 26px;
+}
+
+.contact-link a {
+    color: var(--site-main-color);
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+
+}
+
+.nav-btn i {
+    font-size: 30px;
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--active-text);
+}
+.nav-btn a {
+    font-weight: 500;
+    padding: 15px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: var(--site-second-color);
+
+
+}
+
+@media (max-width:768px) {
+    .nav-title {
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    .top-nav .nav-btn {
+        flex-basis: 45%;
+    }
+
+    .contact-link {
+        flex-basis: 45%;
+
+    }
+}
+
+@media (max-width:600px) {
+    .top-nav {
+        text-align: center;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-nav img {
+        width: 60px;
+    }
+
+    .top-nav .nav-title h1,
+    .top-nav .nav-title p {
+        font-size: 16px;
+        text-align: center;
+    }
+      .top-nav .contact-link a {
+        text-align: center;
+      }
+
+}
+
+.navbar {
+    background-color: var(--site-main-color);
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: var(--active-text);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--active-text);
+}
+@media (max-width:992px) {
+    .navbar>.container-fluid {
+        direction: ltr ;
+    }
+    .navbar .navbar-toggler {
+        color: white;
+        border-color: white;
+    }
+    .navbar .navbar-toggler span {
+       color: white;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+}
